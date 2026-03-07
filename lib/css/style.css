@@ -94,6 +94,11 @@ body {
   margin-left: -16px;
 }
 
+.navbar header .hamburger:hover {
+  transform: scale(1.1);
+  transition: var(--transition-02);
+}
+
 .btm {
   margin-top: 10px;
 }
