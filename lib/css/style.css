@@ -1,10 +1,81 @@
 :root {
     --background: rgb(5, 5, 5);
+    --background-nav: rgb(7, 7, 7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    background: var(--background);
+    background: var(--background-nav);
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar header {
+    background: var(--background-nav);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.15);
+    padding: 1.5rem 1.5rem;
+}
+
+.navbar header .logo {
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+}
+
+.navbar header .logo span {
+    color: rgb(37, 104, 250);
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar header .search {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 4px 8px;
+    width: 140px;
+    height: 24px;
+    border-radius: 16px;
+}
+
+.navbar header .search .icon-search {
+    height: 100%;
+}
+
+.navbar header .search input {
+    padding: 8px;
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+
+.navbar header .search input:focus {
+    outline: none;
+}
+
+.navbar header .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.navbar header .hamburger .garis {
+    background: white;
+    width: 24px;
+    height: 2px;
 }
