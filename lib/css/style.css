@@ -241,3 +241,85 @@ body {
   background: var(--background-primary);
   border: 1px solid var(--primary);
 }
+
+.product {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.product .head {
+  margin-bottom: 32px;
+  background: linear-gradient(34deg,
+    var(--primary) 0%,
+    var(--primary) 50%,
+    #fff 60%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.product .product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  padding: 40px;
+}
+
+.card-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(10, 10, 10, 0.10);
+  border: 1px solid rgba(37, 104, 250, 0.2);
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.card-product .icons-product {
+  transform: scale(4);
+  margin-bottom: 48px;
+  background: rgba(10, 10, 10, 0.5);
+  box-shadow: 0 0 1px rgba(200, 200, 200, 0.15);
+  margin-top: 16px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card-product h2 {
+  margin-bottom: 24px;
+}
+
+.card-product .benefit {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-left: -56px;
+  margin-bottom: 48px;
+}
+
+.card-product .benefit li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  font-size: 12px;
+  background: rgba(50, 50, 50, 0.1);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.card-product button {
+  width: 100%;
+  height: 40px;
+  border-radius: 16px;
+  border: none;
+  background: var(--primary);
+  font-weight: 500;
+  color: #fff;
+}
